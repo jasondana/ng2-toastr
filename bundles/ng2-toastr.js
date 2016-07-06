@@ -1,9 +1,9 @@
 System.registerDynamic("ng2-toastr/src/toast", [], true, function($__require, exports, module) {
   "use strict";
   ;
-  var global = this,
-      __define = global.define;
-  global.define = undefined;
+  var define,
+      global = this,
+      GLOBAL = this;
   var Toast = (function() {
     function Toast(type, message, title) {
       this.type = type;
@@ -13,16 +13,15 @@ System.registerDynamic("ng2-toastr/src/toast", [], true, function($__require, ex
     return Toast;
   }());
   exports.Toast = Toast;
-  global.define = __define;
   return module.exports;
 });
 
 System.registerDynamic("ng2-toastr/src/toast-manager", ["@angular/core", "./toast-container.component", "./toast-options", "./toast", "@angular/core/src/linker/view_container_ref"], true, function($__require, exports, module) {
   "use strict";
   ;
-  var global = this,
-      __define = global.define;
-  global.define = undefined;
+  var define,
+      global = this,
+      GLOBAL = this;
   var __decorate = (this && this.__decorate) || function(decorators, target, key, desc) {
     var c = arguments.length,
         r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc,
@@ -121,16 +120,15 @@ System.registerDynamic("ng2-toastr/src/toast-manager", ["@angular/core", "./toas
     return ToastsManager;
   }());
   exports.ToastsManager = ToastsManager;
-  global.define = __define;
   return module.exports;
 });
 
 System.registerDynamic("ng2-toastr/src/toast-container.component", ["@angular/core", "./toast-options"], true, function($__require, exports, module) {
   "use strict";
   ;
-  var global = this,
-      __define = global.define;
-  global.define = undefined;
+  var define,
+      global = this,
+      GLOBAL = this;
   var __decorate = (this && this.__decorate) || function(decorators, target, key, desc) {
     var c = arguments.length,
         r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc,
@@ -210,16 +208,15 @@ System.registerDynamic("ng2-toastr/src/toast-container.component", ["@angular/co
     return ToastContainer;
   }());
   exports.ToastContainer = ToastContainer;
-  global.define = __define;
   return module.exports;
 });
 
 System.registerDynamic("ng2-toastr/src/toast-options", ["@angular/core"], true, function($__require, exports, module) {
   "use strict";
   ;
-  var global = this,
-      __define = global.define;
-  global.define = undefined;
+  var define,
+      global = this,
+      GLOBAL = this;
   var __decorate = (this && this.__decorate) || function(decorators, target, key, desc) {
     var c = arguments.length,
         r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc,
@@ -245,16 +242,15 @@ System.registerDynamic("ng2-toastr/src/toast-options", ["@angular/core"], true, 
     return ToastOptions;
   }());
   exports.ToastOptions = ToastOptions;
-  global.define = __define;
   return module.exports;
 });
 
 System.registerDynamic("ng2-toastr/ng2-toastr", ["./src/toast", "./src/toast-manager", "./src/toast-container.component", "./src/toast-options"], true, function($__require, exports, module) {
   "use strict";
   ;
-  var global = this,
-      __define = global.define;
-  global.define = undefined;
+  var define,
+      global = this,
+      GLOBAL = this;
   function __export(m) {
     for (var p in m)
       if (!exports.hasOwnProperty(p))
@@ -264,7 +260,6 @@ System.registerDynamic("ng2-toastr/ng2-toastr", ["./src/toast", "./src/toast-man
   __export($__require('./src/toast-manager'));
   __export($__require('./src/toast-container.component'));
   __export($__require('./src/toast-options'));
-  global.define = __define;
   return module.exports;
 });
 
